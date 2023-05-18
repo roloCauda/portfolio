@@ -23,7 +23,7 @@ a{
 nav a{
   font-size: x-large;
   font-weight: 600;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 nav a:hover{
   color: #E31B6D;
@@ -31,6 +31,7 @@ nav a:hover{
 @media (max-width:700px){
   header{
     flex-direction: column;
+    padding-top: 20px;
   }
   nav{
     padding-top: 5px;
@@ -104,13 +105,16 @@ nav a:hover{
   position: relative;
 }
 .dos{
-  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   background-color: #000000;
   color: white;
+  font-size: larger;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .tres{
@@ -147,7 +151,7 @@ nav a:hover{
 footer{
   background-color: #367E7F;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   color: #F2F2F2;
   min-height: 70px;
@@ -157,8 +161,14 @@ footer{
 .logo-final{
   height: 45px;
 }
+footer div{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 .txtFooter{
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1000px) {
@@ -171,7 +181,7 @@ footer{
       width: 100%;
       height: 50%;
   }
-  .caja-presentacion{
+  .caja-presentacion2{
       width: 100%;
       height: 50%;
       align-items: flex-start;
@@ -487,4 +497,23 @@ ul li:nth-child(3) a:before {
 }
 .card a:hover{
   color:#000000;
+}
+
+.container-aptitud{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding-bottom: 25px;
+  padding-top: 40px;
+}
+.aptitud{
+  transition: all 400ms ease;
+}
+.aptitud img{
+  width: 100%;
+  height: 200px;
+}
+.aptitud:hover{
+  transform: translateY(-5%);
 }
