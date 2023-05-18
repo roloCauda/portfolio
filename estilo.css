@@ -3,13 +3,39 @@ body{
   font-family: 'Ysabeau', sans-serif;
 }
 header{
-  height: 65px;
+  min-height: 65px;
   background-color: #000000;
-  color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  color: white;
   padding-left: 25px;
-  position:relative;
+  padding-right: 25px;
+}
+.logo{
+  display: flex;
+  height: 45px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+nav a{
+  font-size: x-large;
+  font-weight: 600;
+  padding-right: 20px;
+}
+nav a:hover{
+  color: #E31B6D;
+}
+@media (max-width:700px){
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
 }
 .cara{
   border-radius: 500px;
@@ -96,6 +122,8 @@ header{
   align-items: center;
   color: #ffffff;
   font-size: larger;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .cuatro{
   background-color: #000000;
@@ -105,18 +133,32 @@ header{
   justify-content: center;
   align-items: center;
   color: #F2F2F2;
-  padding: 5%;
 }
-
-footer{
+.cinco{
   background-color: #367E7F;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
   color: #F2F2F2;
   height: 175px;
   position: relative;
+}
+footer{
+  background-color: #367E7F;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  color: #F2F2F2;
+  min-height: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.logo-final{
+  height: 45px;
+}
+.txtFooter{
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -153,6 +195,7 @@ footer{
   align-items: center;
   width: 550px;
   margin: auto;
+  padding-bottom: 30px;
 }
 
 .form label {
@@ -345,6 +388,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   padding-inline-start: 0px;
+  padding-top:35px;
 }
 
 ul li {
@@ -406,18 +450,31 @@ ul li:nth-child(2) a:before{
 ul li:nth-child(3) a:before {
   background: linear-gradient(45deg, #0a66c2, #54a2cc, #a6c1dc);
 }
-.proyectos{
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
+.container-card{
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-bottom: 20px;
 }
 .card{
+  width: 100%;
   background-color: #E31B6D;
   text-align: left;
   color:#000000;
   font-weight: bold;
-  width: 30%;
-  padding: 10px;
+  box-shadow: 0px 1px 10px rgba(248, 248, 248, 0.2);
+  padding-bottom: 20px;
+  margin-top: 20px;
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(248, 248, 248, 0.4);
+  transform: translateY(-3%);
+}
+.card h3, .card p{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .card img{
   width: 100%;
@@ -425,6 +482,9 @@ ul li:nth-child(3) a:before {
 }
 .btnVer, .card a{
   text-align: center;
-  color: #252934;
+  color: #ffffff;
   text-decoration: none;
+}
+.card a:hover{
+  color:#000000;
 }

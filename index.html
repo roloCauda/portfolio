@@ -17,11 +17,13 @@
 <body>
     <header>
         <div>
-            <h3><img class="logo" src="https://i.imgur.com/B2FbNXZ.png" alt="Logo"></h3>
+            <img class="logo" src="https://i.imgur.com/Wtj11V1.png" alt="Logo">
         </div>
-        <div>
-            
-        </div>
+        <nav>
+            <a href="#sobre-mi" class="nav-link">Sobre Mi</a>
+            <a href="#aptitudes" class="nav-link">Aptitudes</a>                <a href="#proyectos" class="nav-link">Mis Proyectos</a>
+             <a href="#contacto" class="nav-link">Contacto</a>
+        </nav>
     </header>
     <section class="saludo">
         <div class="caja-presentacion">
@@ -48,7 +50,7 @@
             <div class="burbuja"></div>
         </div>
     </section>
-    <section class="uno">
+    <section class="uno" id="sobre-mi">
         <div class="caja-central">
             <div class="caja-cara">
                 <img class="cara" src="https://i.imgur.com/rpWXztg.jpg" alt="Foto Perfil">            
@@ -63,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="dos">
+    <section class="dos" id="aptitudes">
         <div>
             <h2>Aptitudes</h2>
         </div>
@@ -71,16 +73,15 @@
 
         </div>
     </section>
-    <section class="tres">
+    <section class="tres", id="proyectos">
         <h2>Mis Proyectos</h2>
-        <div class="proyectos">
+        <div class="container-card">
             <div class="card">
                 <img src="https://i.imgur.com/CshgAW5.jpg" alt="Gran Cerdo">
                 <h3>Gran Cerdo</h3>
                 <p>
-                    Juego realizado en equipo en C++
-                    por turnos para dos personas en el
-                    que el participante que sume más puntos gana.
+                    Juego realizado en grupo en C++ de estilo
+                    juego de mesa por turnos, para 2 participantes.
                 </p>
                 <div class="btnVer">
                     <a href="https://github.com/roloCauda/labI-tp-integrador" target="_blank">Ver Proyecto</a>
@@ -88,15 +89,15 @@
             </div>
             <div class="card">
                 <img src="https://i.imgur.com/IJcDiLv.png" alt="Bank Attack">
-                <h3>Bank Attack</h3>
-                <p>
-                    Juego realizado en C++ de estilo
-                    arcade-estratégico con utilización
-                    de la librería SFML.                   
-                </p>
-                <div class="btnVer">
-                    <a href="https://github.com/roloCauda/labII-tp-integrador" target="_blank">Ver Proyecto</a>
-                </div>
+                    <h3>Bank Attack</h3>
+                    <p>
+                        Juego realizado en C++ de estilo
+                        arcade-estratégico con utilización
+                        de la librería SFML.                   
+                    </p>
+                    <div class="btnVer">
+                        <a href="https://github.com/roloCauda/labII-tp-integrador" target="_blank">Ver Proyecto</a>
+                    </div>
             </div>
             <div class="card">
                 <img src="https://i.imgur.com/d1NhOck.png" alt="Catálogo App">
@@ -113,12 +114,12 @@
 
         </div>
     </section>
-    <section class="cuatro">
+    <section class="cuatro" id="contacto">
                 <form id="form" action="" class="form">
                     <h2 class="tag"><span>Contactame</span></h2>
                     <label for="name">Nombre Completo <span>*</span></label>
                     <input name="name" required type="text" id="name" placeholder="Juan">
-                    <label for="email">Correo electrónico <span>*</span></label>
+                    <label for="email">Correo Electrónico <span>*</span></label>
                     <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
                     <label for="message">Mensaje</label>
                     <textarea required id="message" name="message" cols="30" rows="10"></textarea>
@@ -126,7 +127,7 @@
                 </form>
                 <a href="mailto:rolycauda@gmail.com" id="truco"></a>
     </section>
-    <footer>
+    <section class="cinco">
         <div>
             <ul>
                 <li>
@@ -138,8 +139,13 @@
                   <a href="https://www.linkedin.com/in/rolando-cauda-877a37230/"><i class="fab fa-linkedin-in icon"></i></a></li>
             </ul>
         </div>
-        <div>
+    </section>
+    <footer>
+        <div class="txtFooter">
             <h2>© Todos los derechos reservados</h2>
+        </div>
+        <div>
+            <img class="logo-final" src="https://i.imgur.com/LD5MVSi.png" alt="logo">
         </div>
     </footer>
     <script>
