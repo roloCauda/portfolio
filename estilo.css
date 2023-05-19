@@ -518,8 +518,14 @@ ul li:nth-child(3) a:before {
 }
 .aptitud img{
   width: 100%;
-  height: 200px;
 }
 .aptitud:hover{
   transform: translateY(-5%);
+}
+
+@media (min-width: 1000px){
+  .aptitud img{
+    width: 200px;
+    height: 200px;
+  }
 }
