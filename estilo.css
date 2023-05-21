@@ -3,32 +3,27 @@ body{
   font-family: 'Ysabeau', sans-serif;
 }
 header{
-  position: fixed;
-  width: 100vw;
-  z-index: 9999;
   min-height: 65px;
   background-color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .logo{
   display: flex;
   height: 45px;
-  padding-left: 25px;
 }
 a{
   text-decoration: none;
   color: #fff;
 }
-nav{
-  margin-right: 25px;
-}
 nav a{
   font-size: x-large;
   font-weight: 600;
-  padding-right: 30px;
+  padding-right: 15px;
 }
 nav a:hover{
   color: #E31B6D;
@@ -41,7 +36,7 @@ nav a:hover{
   nav{
     padding-top: 5px;
     padding-bottom: 20px;
-    margin-left: 50px;
+    padding-left: 40px;
   }
 }
 .cara{
@@ -60,7 +55,7 @@ nav a:hover{
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 65px);
   background-color: #252934;
   color: white;
 }
@@ -306,7 +301,7 @@ input::-webkit-input-placeholder {
   opacity: .3;
   position: absolute;
   bottom: 0;
-  z-index: 10000;
+  
   animation: burbujas 3s linear infinite;
 }
 
