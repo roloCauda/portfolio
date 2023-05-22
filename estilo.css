@@ -31,7 +31,7 @@ nav a:hover{
 @media (max-width:700px){
   header{
     flex-direction: row;
-    padding-right: 15px;
+    padding-right: 5px;
   }
   header .abrirMenu,header .cerrarMenu{
     display: block;
@@ -109,6 +109,7 @@ nav a:hover{
   align-items: center;
   width: 60%;
   animation: movimiento 3s linear infinite;
+  padding-bottom: 10px;
 }
 
 .caja-presentacion{
@@ -229,6 +230,9 @@ footer div{
       height: 70%;
       flex-direction: column;
       padding-right: 20px;
+  }
+  .caja-presentacion2 h2{
+    text-align: center;
   }
   .caja-cara{
       width: 100%;
