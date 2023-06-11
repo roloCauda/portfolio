@@ -31,7 +31,7 @@ nav a:hover{
 @media (max-width:700px){
   header{
     flex-direction: row;
-    padding-right: 5px;
+    padding-right: 10px;
   }
   header .abrirMenu,header .cerrarMenu{
     display: block;
@@ -286,7 +286,7 @@ footer div{
 
 .form input, .form textarea {
   display: flex;
-  width: auto;
+  width: 300px;
   font-size: 1rem;
   border-radius: 10px;
   padding: .8em;
@@ -525,23 +525,29 @@ ul li:nth-child(2) a:before{
 .contacto ul li:nth-child(3) a:before {
   background: linear-gradient(45deg, #0a66c2, #54a2cc, #a6c1dc);
 }
-.container-card{
+.container-card {
   display: grid;
   gap: 1.75rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
   margin-bottom: 20px;
 }
-.card{
-  width: 100%;
+
+.card {
   background-color: #E31B6D;
   text-align: left;
-  color:#000000;
+  color: #000000;
   font-weight: bold;
   box-shadow: 0px 1px 10px rgba(248, 248, 248, 0.2);
   padding-bottom: 20px;
   margin-top: 20px;
   cursor: default;
   transition: all 400ms ease;
+}
+
+@media (min-width: 768px) {
+  .container-card {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
 }
 .card:hover{
   box-shadow: 5px 5px 20px rgba(248, 248, 248, 0.4);
