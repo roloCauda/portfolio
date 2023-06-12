@@ -92,7 +92,7 @@ nav a:hover{
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  height: calc(100vh - 65px);
+  height: calc(760px - 65px);
   background-color: #252934;
   color: white;
 }
@@ -138,7 +138,7 @@ nav a:hover{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100vh;
+  height: 760px;
   background-color: #367E7F;
   color: white;
   position: relative;
@@ -148,7 +148,7 @@ nav a:hover{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 760px;
   background-color: #000000;
   color: white;
   font-size: larger;
@@ -159,7 +159,7 @@ nav a:hover{
 
 .tres{
   background-color: #252934;
-  height: 100vh;
+  height: 760px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -171,7 +171,7 @@ nav a:hover{
 }
 .cuatro{
   background-color: #000000;
-  height: 100vh;
+  height: 760px;
   display: flex;
   flex-direction: row;
   justify-content: center;
