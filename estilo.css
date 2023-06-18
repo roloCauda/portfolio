@@ -1,6 +1,8 @@
 body{
   margin: 0;
   font-family: 'Ysabeau', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 header{
   height: 65px;
@@ -168,8 +170,19 @@ nav a:hover{
   font-size: larger;
   padding-left: 2rem;
   padding-right: 2rem;
+  position: relative;
 }
+
+.arrow-down {
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 100px solid #252934;
+  position: absolute;
+  bottom: -100px;
+}
+
 .cuatro{
+  padding-top:85px;
   background-color: #000000;
   height: 760px;
   display: flex;
@@ -185,7 +198,7 @@ nav a:hover{
   flex-direction: column;
   align-items: center;
   color: #F2F2F2;
-  height: 175px;
+  height: 120px;
   position: relative;
 }
 footer{
@@ -221,6 +234,7 @@ footer div{
 @media (max-width: 500px) {
   .txtFooter::before {
     content: "© TDR";
+    padding-top: 15px;
   }
 }
 
@@ -251,6 +265,7 @@ footer div{
   }
   .tres{
       height: auto;
+      padding-bottom: 55px;
   }
   .cuatro{
       height: auto;
